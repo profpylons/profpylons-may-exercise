@@ -8,6 +8,7 @@ The example given for correct output is convered to a fixture in `tests/bands.te
 
 ```bash
 cd bands
+npm i
 npm run test
 ```
 
@@ -23,5 +24,6 @@ Run the example with:
 
 ```bash
 cd dialog-example
+npm i
 ng serve --open
 ```
