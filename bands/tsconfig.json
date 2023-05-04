@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "include": [
+      "src/**/*",
+      "test/**/*.test.ts"
+  ]
+}

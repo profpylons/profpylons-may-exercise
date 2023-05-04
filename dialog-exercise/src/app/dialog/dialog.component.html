@@ -1,0 +1,9 @@
+<div *ngIf="isOpen">
+  <div class="dialog-header">
+    <span class="dialog-title">{{ title }}</span>
+    <button id="close-button" type="button" (click)="closeDialog()">X</button>
+  </div>
+  <div class="dialog-body">
+    <ng-content></ng-content>
+  </div>
+</div>

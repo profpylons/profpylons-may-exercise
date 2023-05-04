@@ -1,0 +1,26 @@
+<title>Dialog Exercise</title>
+<p>Weclome to the Dialog Component Tester!</p>
+
+<p></p>
+<p></p>
+
+<div><button type="button" (click)="openBasicDialog()">Open Basic Dialog</button></div>
+<p></p>
+<div>
+  <app-dialog title="A Basic Dialog" #basicDialog>
+    <ng-container dialogBody>
+      <div>Some text content. You need to use the X button to close the dialog.</div>
+    </ng-container>
+  </app-dialog>
+</div>
+
+<p></p>
+<p></p>
+
+<div><button type="button" (click)="openDialogWithChild()">Open Dialog With Child</button></div>
+<p></p>
+<div>
+  <app-dialog title="A Dialog With Child" #dialogWithChild>
+    <app-test-child (formSubmitted)="closeChildCallback()"></app-test-child>
+  </app-dialog>
+</div>
